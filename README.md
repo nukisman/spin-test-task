@@ -1,1 +1,1 @@
-# spin-test-task
+# Test task for Spin project
