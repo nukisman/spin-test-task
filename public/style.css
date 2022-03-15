@@ -1,0 +1,165 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1f2426;
+  color: whitesmoke;
+  font-family: 'Roboto Thin', sans-serif;
+  padding: 0;
+  margin: 0;
+
+  scrollbar-width: 8px;
+  scrollbar-color: light;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #97dffc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #181818;
+}
+
+#signed-pending {
+  position: absolute;
+  left: 45%;
+  top: 48%;
+  color: #97dffc;
+}
+
+h3 {
+  padding: 0.3em 0.5em;
+  background-color: #181818;
+  color: #97dffc;
+}
+
+#wallet-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+#wallet-account {
+  color: whitesmoke;
+}
+
+#wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: max-content;
+  padding: 0.5em;
+}
+.button {
+  padding: 0.3em 1em;
+
+  font-family: monospace;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 0.3em;
+  background: linear-gradient(90deg, #ff6a9c 0%, #c25aff 100%);
+  color: black;
+  cursor: pointer;
+}
+.button:disabled {
+  cursor: default;
+  background: grey;
+  color: whitesmoke;
+}
+
+.error {
+  background: orangered;
+  color: whitesmoke;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+#signed-out {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 30%;
+  padding-top: 35%;
+  justify-items: center;
+}
+#logo {
+  padding: 2em;
+}
+#wallet-address {
+  padding: 0.3em 0.5em;
+
+  border: solid steelblue 1px;
+  border-radius: 0.3em;
+  background: black;
+  color: whitesmoke;
+}
+#wallet-address:focus {
+  outline: none;
+  border-color: #b5fed9;
+}
+
+#spin-contract {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 20em;
+  padding: 0.5em;
+}
+
+#select-market {
+  padding: 0.3em;
+
+  background: black;
+  color: #b5fed9;
+}
+
+table#order-book {
+  /*padding: 1em;*/
+}
+
+table#order-book > thead tr th {
+  text-align: right;
+  padding-left: 1em;
+}
+table#order-book > thead tr th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+
+table#order-book > tbody tr.ask-order > td,
+table#order-book > tbody tr.spread > td,
+table#order-book > tbody tr.bid-order > td {
+  text-align: right;
+  padding-left: 1em;
+}
+
+table#order-book > tbody tr.ask-order > td:first-child {
+  color: #ff6a9c;
+  text-align: left;
+  padding-left: 0;
+}
+
+table#order-book > tbody tr.spread > td {
+  color: grey;
+}
+table#order-book > tbody tr.spread > td:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+
+table#order-book > tbody tr.bid-order > td:first-child {
+  color: #b5fed9;
+  text-align: left;
+  padding-left: 0;
+}
